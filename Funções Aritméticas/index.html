@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções Aritméticas</title>
+</head>
+<body>
+    <h1>Aritméticas</h1>
+    <main>
+        <!-- 
+        Resumo das Funções Aritméticas no PHP (Curso em Vídeo - Gustavo Guanabara)
+
+        1. abs()
+        - Retorna o valor absoluto (sem sinal) de um número.
+        - Ex: abs(-2000) retorna 2000
+
+        2. base_convert()
+        - Converte um número de uma base para outra.
+        - Ex: base_convert(254, 10, 16) retorna "FE" (decimal para hexadecimal)
+
+        3. ceil()
+        - Arredonda um número para cima (teto).
+        - Ex: ceil(4.3) retorna 5
+
+        4. floor()
+        - Arredonda um número para baixo (chão).
+        - Ex: floor(4.7) retorna 4
+
+        5. round()
+        - Arredonda um número para o inteiro mais próximo.
+        - Ex: round(4.5) retorna 5
+
+        6. intdiv()
+        - Realiza divisão inteira (descarta o resto).
+        - Ex: intdiv(5, 2) retorna 2
+
+        7. min()
+        - Retorna o menor valor entre os argumentos.
+        - Ex: min(5, 2, 7) retorna 2
+
+        8. max()
+        - Retorna o maior valor entre os argumentos.
+        - Ex: max(5, 2, 7) retorna 7
+
+        9. pi() ou constante M_PI
+        - Retorna o valor da constante matemática π (pi ≈ 3.14159)
+        - Ex: pi() ou M_PI
+
+        10. pow()
+            - Calcula a potência de um número (base, expoente).
+            - Ex: pow(5, 2) retorna 25
+
+        11. sin(), cos(), tan()
+            - Calculam seno, cosseno e tangente de um ângulo em radianos.
+            - Ex: sin(M_PI / 2) retorna 1
+
+        12. deg2rad(), rad2deg()
+            - Convertem graus para radianos e vice-versa.
+            - Ex: deg2rad(180) retorna M_PI
+
+        13. sqrt()
+            - Retorna a raiz quadrada de um número.
+            - Ex: sqrt(81) retorna 9
+
+        14. Raiz cúbica (sem função nativa)
+            - Pode ser feita com pow().
+            - Ex: pow(27, 1/3) retorna 3
+
+        Essas funções substituem ou complementam operadores aritméticos quando necessário, oferecendo mais precisão e controle nas operações matemáticas.
+        -->
+
+        
+        <?php 
+        
+
+
+        ?>
+
+        <!-- Tabela: Funções Aritméticas em PHP -->
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; font-family: Arial, sans-serif;">
+  <thead style="background-color: #f2f2f2;">
+    <tr>
+      <th>Função</th>
+      <th>Descrição</th>
+      <th>Exemplo</th>
+      <th>Resultado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>abs()</code></td>
+      <td>Retorna o valor absoluto (sem sinal).</td>
+      <td><code>abs(-2000)</code></td>
+      <td>2000</td>
+    </tr>
+    <tr>
+      <td><code>base_convert()</code></td>
+      <td>Converte número de uma base para outra.</td>
+      <td><code>base_convert(254, 10, 16)</code></td>
+      <td>"FE"</td>
+    </tr>
+    <tr>
+      <td><code>ceil()</code></td>
+      <td>Arredonda para cima.</td>
+      <td><code>ceil(4.3)</code></td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td><code>floor()</code></td>
+      <td>Arredonda para baixo.</td>
+      <td><code>floor(4.7)</code></td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td><code>round()</code></td>
+      <td>Arredonda para o inteiro mais próximo.</td>
+      <td><code>round(4.5)</code></td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td><code>intdiv()</code></td>
+      <td>Realiza divisão inteira (sem resto).</td>
+      <td><code>intdiv(5, 2)</code></td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td><code>min()</code></td>
+      <td>Retorna o menor valor.</td>
+      <td><code>min(5, 2, 7)</code></td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td><code>max()</code></td>
+      <td>Retorna o maior valor.</td>
+      <td><code>max(5, 2, 7)</code></td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td><code>pi()</code> ou <code>M_PI</code></td>
+      <td>Retorna o valor de π (pi).</td>
+      <td><code>pi()</code></td>
+      <td>3.14159...</td>
+    </tr>
+    <tr>
+      <td><code>pow()</code></td>
+      <td>Calcula potência.</td>
+      <td><code>pow(5, 2)</code></td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td><code>sin()</code>, <code>cos()</code>, <code>tan()</code></td>
+      <td>Funções trigonométricas (ângulo em radianos).</td>
+      <td><code>sin(M_PI / 2)</code></td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><code>deg2rad()</code>, <code>rad2deg()</code></td>
+      <td>Converte graus para radianos e vice-versa.</td>
+      <td><code>deg2rad(180)</code></td>
+      <td>3.14159...</td>
+    </tr>
+    <tr>
+      <td><code>sqrt()</code></td>
+      <td>Calcula raiz quadrada.</td>
+      <td><code>sqrt(81)</code></td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td><code>pow(base, 1/3)</code></td>
+      <td>Calcula raiz cúbica (não há função nativa).</td>
+      <td><code>pow(27, 1/3)</code></td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+
+    </main>
+</body>
+</html>

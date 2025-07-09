@@ -12,11 +12,12 @@
     </header>
     <main>
         <?php 
-            $nome= $_GET["nome"];
-            $sobrenome= $_GET["sobrenome"];
+            $nome= $_GET["nome"] ?? "sem nome";
+            $sobrenome= $_GET["sobrenome"] ?? "desconhecido";
 
             echo "<p> É um prazer te conhecer $nome $sobrenome ! este é o meu site <\p> ";
         ?>
+        <p><a href="javascript:history.go(-1)">Voltar para página anterior</a></p>
     </main>
 </body>
 </html>
