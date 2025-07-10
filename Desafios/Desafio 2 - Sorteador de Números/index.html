@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteador de Números em PHP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sorteador de Números em PHP</h1>
+    </header>
+    <main>
+        <form action="resultado.php" method="POST">
+            <label for="min">Valor Mínimo:</label>
+            <input type="number" id="min" name="min" required>
+            <br>
+            <label for="max">Valor Máximo:</label>
+            <input type="number" id="max" name="max" required>
+            <br>
+            <input type="submit" value="Sortear">
+        </form>
+    </main>
+</body>
+</html>
